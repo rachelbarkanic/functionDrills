@@ -248,7 +248,9 @@ let oddChecker = thatsOdd(4)
     we would expect the function to return 'Sharknado is the best movie ever!'
 */
 
-//CODE HERE
+const bestMovie = title => {
+  return + 'is the best movie ever!'
+}
 
 
 ////////////////// PROBLEM 15 ////////////////////
