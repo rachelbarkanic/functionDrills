@@ -140,7 +140,7 @@ const exclaimTwo = str => {
   Brownie points if you use a template string
 */
 
-const exclaimTwo = str => `${str.toUpperCase()}!!!`
+//const exclaimTwo = str => `${str.toUpperCase()}!!!`
 
 ////////////////// PROBLEM 9 ////////////////////
 
@@ -167,8 +167,17 @@ function exclaimFour(str) {
   Create a variable called 'nameGreeting' and set it equal to your function invoked (called) passing in an argument.
 */
 
-//CODE HERE
+function nameCheck(name) {
+  if (name === "Steven") {
+    return 'What is up Steven'
+  } else if (name === "Bryan") {
+    return 'Hey Bryan!'
+  } else {
+    return 'Cool name, ${name}'
+  }
+}
 
+let nameGreeting = nameCheck('Steven')
 
 ////////////////// PROBLEM 11 ////////////////////
 /*
@@ -180,7 +189,19 @@ function exclaimFour(str) {
   Create a variable called 'colorRating' and set it equal to faveColorFinder invoked (called), passing in an argument.
 */
 
-//CODE HERE
+function faveColorFinder(color) {
+if (color === 'red') {
+  return "red is a great color"
+} else if (color === 'green') {
+  return "green is a solid favorite color"
+} else if (color === 'black') {
+  return "so trendy"
+} else {
+  return "you need to reevaluate your favorite color choice"
+}
+}
+
+let colorRating = faveColorFinder('purple')
 
 
 ////////////////// PROBLEM 12 ////////////////////
@@ -191,8 +212,13 @@ let namesArr = ['Cameron', 'Riley', 'Eric', 'Brenna', 'Karl']
   Call the function, passing in the `namesArr` array (above).
 */
 
-//CODE HERE
+function printAllNames(names) {
+  for (let i = 0; i > names.length; i++) {
+    console.log(names[i])
+  }
+}
 
+printAllNames(namesArr)
 
 ////////////////// PROBLEM 13 ////////////////////
 /*
