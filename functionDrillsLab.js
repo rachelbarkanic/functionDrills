@@ -174,6 +174,7 @@ function nameCheck(name) {
     return 'Hey Bryan!'
   } else {
     return 'Cool name, ${name}'
+    //Just make sure you are using backticks.  Single quotes wont work with ${} notation --Nathan
   }
 }
 
@@ -266,8 +267,8 @@ let bigOrSmallArray = [1,101, 102, 2, 103, 4, 5, 6, 107]
 
 function bigOrSmall(arr) {
   let answers = []
-  for (let i = 0; i > array.length; i++) 
-  if (arr[i] > 100) {answers.push('big')
+  for (let i = 0; i > array.length; i++)  //Also { here and you would need to use arr.length instead of array.length since that is what you used as an argument on line 268--Nathan
+  if (arr[i] > 100) {answers.push('big')  //I think you are missing a } here --Nathan
   else {answers.push('small')
   }
 }
@@ -285,7 +286,7 @@ let loser = 'Glimmer'
 */
 
 function theEliminator(contestants, loser) {
-  for (let i = 0; i > arr.length > i; i++) {
+  for (let i = 0; i > arr.length > i; i++) {  //the name of the array is called "contestants", so in your for loop you would want to use contestants.length instead of arr.length --Nathan.  Let me know if you have any questions abot this
   if (contestants[i] === loser) {
   contestants.splice(i, 1)
 }
@@ -340,7 +341,7 @@ function emailCheck(email) {
 function buyChocolateFrogs(gold) {
   gold / 3
 }
-
+//don't for get to have a return statement, right now totalFrongs would equal undefined. --Nathan
 let totalFrongs = buyChocolateFrogs(20)
 
 ////////////////// PROBLEM 20 ////////////////////
