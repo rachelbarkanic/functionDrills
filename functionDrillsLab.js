@@ -140,7 +140,7 @@ const exclaimTwo = str => {
   Brownie points if you use a template string
 */
 
-//const exclaimTwo = str => `${str.toUpperCase()}!!!`
+const exclaimTwo = str => `${str.toUpperCase()}!!!`
 
 ////////////////// PROBLEM 9 ////////////////////
 
@@ -337,8 +337,11 @@ function emailCheck(email) {
   Create a variable called `totalFrogs` and set it equal to your function invoked, passing in the amount of gold you are willing to spend.
 */
 
-function buyChocolateFrogs()
+function buyChocolateFrogs(gold) {
+  gold / 3
+}
 
+let totalFrongs = buyChocolateFrogs(20)
 
 ////////////////// PROBLEM 20 ////////////////////
 /*
@@ -348,7 +351,15 @@ function buyChocolateFrogs()
   Invoke the function and store the returned value to a variable called `totalFrogs2`.
 */
 
-//CODE HERE
+function buyChocolateFrogs2(gold) {
+  if ( gold % 3 === 0) {
+    return gold / 3
+  } else if ((gold - 1) % 3 === 0) {
+    return (gold - 1) / 3
+  } else {
+    return (gold - 2) / 3
+  }
+}
 
 
 ////////////////// PROBLEM 21 ////////////////////
